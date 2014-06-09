@@ -7,48 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72520C4C1945B96300EA00CA /* MineswifterGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72520C4B1945B96300EA00CA /* MineswifterGame.swift */; };
+		72758E101945BF73000B8575 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72758E0F1945BF73000B8575 /* Images.xcassets */; };
 		72EA59401945B8330075BB4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA593F1945B8330075BB4B /* AppDelegate.swift */; };
-		72EA59421945B8330075BB4B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 72EA59411945B8330075BB4B /* GameScene.sks */; };
-		72EA59441945B8330075BB4B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA59431945B8330075BB4B /* GameScene.swift */; };
-		72EA59461945B8330075BB4B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA59451945B8330075BB4B /* GameViewController.swift */; };
+		72EA59441945B8330075BB4B /* MineswifterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA59431945B8330075BB4B /* MineswifterScene.swift */; };
+		72EA59461945B8330075BB4B /* MineswifterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA59451945B8330075BB4B /* MineswifterViewController.swift */; };
 		72EA59491945B8330075BB4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72EA59471945B8330075BB4B /* Main.storyboard */; };
-		72EA594B1945B8330075BB4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72EA594A1945B8330075BB4B /* Images.xcassets */; };
-		72EA59571945B8330075BB4B /* MineswifterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA59561945B8330075BB4B /* MineswifterTests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		72EA59511945B8330075BB4B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 72EA59321945B8330075BB4B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 72EA59391945B8330075BB4B;
-			remoteInfo = Mineswifter;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		72EA593A1945B8330075BB4B /* Mineswifter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mineswifter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72520C4B1945B96300EA00CA /* MineswifterGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineswifterGame.swift; sourceTree = "<group>"; };
+		72520C4D1945BB8C00EA00CA /* Mineswifter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mineswifter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72758E0F1945BF73000B8575 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		72EA593E1945B8330075BB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72EA593F1945B8330075BB4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72EA59411945B8330075BB4B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		72EA59431945B8330075BB4B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		72EA59451945B8330075BB4B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		72EA59431945B8330075BB4B /* MineswifterScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineswifterScene.swift; sourceTree = "<group>"; };
+		72EA59451945B8330075BB4B /* MineswifterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineswifterViewController.swift; sourceTree = "<group>"; };
 		72EA59481945B8330075BB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		72EA594A1945B8330075BB4B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		72EA59501945B8330075BB4B /* MineswifterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MineswifterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		72EA59551945B8330075BB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72EA59561945B8330075BB4B /* MineswifterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineswifterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		72EA59371945B8330075BB4B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72EA594D1945B8330075BB4B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,29 +41,17 @@
 			isa = PBXGroup;
 			children = (
 				72EA593C1945B8330075BB4B /* Mineswifter */,
-				72EA59531945B8330075BB4B /* MineswifterTests */,
-				72EA593B1945B8330075BB4B /* Products */,
+				72520C4D1945BB8C00EA00CA /* Mineswifter.app */,
 			);
-			sourceTree = "<group>";
-		};
-		72EA593B1945B8330075BB4B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				72EA593A1945B8330075BB4B /* Mineswifter.app */,
-				72EA59501945B8330075BB4B /* MineswifterTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		72EA593C1945B8330075BB4B /* Mineswifter */ = {
 			isa = PBXGroup;
 			children = (
-				72EA593F1945B8330075BB4B /* AppDelegate.swift */,
-				72EA59411945B8330075BB4B /* GameScene.sks */,
-				72EA59431945B8330075BB4B /* GameScene.swift */,
-				72EA59451945B8330075BB4B /* GameViewController.swift */,
+				72520C4B1945B96300EA00CA /* MineswifterGame.swift */,
+				72EA59431945B8330075BB4B /* MineswifterScene.swift */,
+				72EA59451945B8330075BB4B /* MineswifterViewController.swift */,
 				72EA59471945B8330075BB4B /* Main.storyboard */,
-				72EA594A1945B8330075BB4B /* Images.xcassets */,
 				72EA593D1945B8330075BB4B /* Supporting Files */,
 			);
 			path = Mineswifter;
@@ -93,24 +60,9 @@
 		72EA593D1945B8330075BB4B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				72758E0F1945BF73000B8575 /* Images.xcassets */,
+				72EA593F1945B8330075BB4B /* AppDelegate.swift */,
 				72EA593E1945B8330075BB4B /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		72EA59531945B8330075BB4B /* MineswifterTests */ = {
-			isa = PBXGroup;
-			children = (
-				72EA59561945B8330075BB4B /* MineswifterTests.swift */,
-				72EA59541945B8330075BB4B /* Supporting Files */,
-			);
-			path = MineswifterTests;
-			sourceTree = "<group>";
-		};
-		72EA59541945B8330075BB4B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				72EA59551945B8330075BB4B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,26 +84,8 @@
 			);
 			name = Mineswifter;
 			productName = Mineswifter;
-			productReference = 72EA593A1945B8330075BB4B /* Mineswifter.app */;
+			productReference = 72520C4D1945BB8C00EA00CA /* Mineswifter.app */;
 			productType = "com.apple.product-type.application";
-		};
-		72EA594F1945B8330075BB4B /* MineswifterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 72EA595D1945B8330075BB4B /* Build configuration list for PBXNativeTarget "MineswifterTests" */;
-			buildPhases = (
-				72EA594C1945B8330075BB4B /* Sources */,
-				72EA594D1945B8330075BB4B /* Frameworks */,
-				72EA594E1945B8330075BB4B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				72EA59521945B8330075BB4B /* PBXTargetDependency */,
-			);
-			name = MineswifterTests;
-			productName = MineswifterTests;
-			productReference = 72EA59501945B8330075BB4B /* MineswifterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -165,10 +99,6 @@
 					72EA59391945B8330075BB4B = {
 						CreatedOnToolsVersion = 6.0;
 					};
-					72EA594F1945B8330075BB4B = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 72EA59391945B8330075BB4B;
-					};
 				};
 			};
 			buildConfigurationList = 72EA59351945B8330075BB4B /* Build configuration list for PBXProject "Mineswifter" */;
@@ -180,12 +110,11 @@
 				Base,
 			);
 			mainGroup = 72EA59311945B8330075BB4B;
-			productRefGroup = 72EA593B1945B8330075BB4B /* Products */;
+			productRefGroup = 72EA59311945B8330075BB4B;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				72EA59391945B8330075BB4B /* Mineswifter */,
-				72EA594F1945B8330075BB4B /* MineswifterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,16 +124,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72EA594B1945B8330075BB4B /* Images.xcassets in Resources */,
-				72EA59421945B8330075BB4B /* GameScene.sks in Resources */,
 				72EA59491945B8330075BB4B /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72EA594E1945B8330075BB4B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				72758E101945BF73000B8575 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,29 +136,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72EA59441945B8330075BB4B /* GameScene.swift in Sources */,
-				72EA59461945B8330075BB4B /* GameViewController.swift in Sources */,
+				72EA59441945B8330075BB4B /* MineswifterScene.swift in Sources */,
+				72EA59461945B8330075BB4B /* MineswifterViewController.swift in Sources */,
 				72EA59401945B8330075BB4B /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72EA594C1945B8330075BB4B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				72EA59571945B8330075BB4B /* MineswifterTests.swift in Sources */,
+				72520C4C1945B96300EA00CA /* MineswifterGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		72EA59521945B8330075BB4B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 72EA59391945B8330075BB4B /* Mineswifter */;
-			targetProxy = 72EA59511945B8330075BB4B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		72EA59471945B8330075BB4B /* Main.storyboard */ = {
@@ -285,7 +191,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -321,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -352,42 +258,6 @@
 			};
 			name = Release;
 		};
-		72EA595E1945B8330075BB4B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mineswifter.app/Mineswifter";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MineswifterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		72EA595F1945B8330075BB4B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mineswifter.app/Mineswifter";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MineswifterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -407,14 +277,7 @@
 				72EA595C1945B8330075BB4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		72EA595D1945B8330075BB4B /* Build configuration list for PBXNativeTarget "MineswifterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				72EA595E1945B8330075BB4B /* Debug */,
-				72EA595F1945B8330075BB4B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
