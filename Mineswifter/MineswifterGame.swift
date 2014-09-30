@@ -25,7 +25,7 @@ class MineswifterGame {
     }
     
     func setupTiles() {
-        for i in 0..numberOfBombs {
+        for i in 0..<numberOfBombs {
             let row = randomIntUpTo(numberOfRows)
             let col = randomIntUpTo(numberOfCols)
             if !tileHasBomb(row, col: col) {
@@ -126,8 +126,8 @@ class MineswifterGame {
     }
     
     func revealAll() {
-        for row in 0..numberOfRows {
-            for col in 0..numberOfCols {
+        for row in 0..<numberOfRows {
+            for col in 0..<numberOfCols {
                 if tileHasBomb(row, col: col) {
                     notifyView("DrawBombAtNotification", info: ["Row": row, "Col": col])
                 }

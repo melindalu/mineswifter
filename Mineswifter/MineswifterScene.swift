@@ -24,7 +24,7 @@ class MineswifterScene: SKScene {
     var gameModel = MineswifterGame()
     
     var boardNode: SKSpriteNode
-    var tileNodes = SKSpriteNode[]()
+    var tileNodes = [SKSpriteNode]()
     var bombCountNode: SKLabelNode
     var faceNode: SKLabelNode
     var tileCountNode: SKLabelNode
@@ -34,7 +34,7 @@ class MineswifterScene: SKScene {
     
     var currentTouchStartTime: NSDate?
     
-    init(size: CGSize)  {
+    override init(size: CGSize)  {
         func tileSizing(screenSize: CGSize) -> (Int, Int) {
             let tileXSpacing = screenSize.width / CGFloat(numberOfCols)
             let tileYSpacing = (screenSize.height - faceFontSize - labelYPadding) / CGFloat(numberOfRows)
@@ -72,6 +72,10 @@ class MineswifterScene: SKScene {
         super.init(size: size)
         self.backgroundColor = backColor
     }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func didMoveToView(view: SKView) {
         self.addChild(boardNode)
@@ -94,8 +98,8 @@ class MineswifterScene: SKScene {
     }
     
     func runFuncWithCoordsFromNotification(f: (Int, Int) -> (), notification: NSNotification) {
-        if let rowVal: AnyObject! = notification.userInfo["Row"] {
-            if let colVal: AnyObject! = notification.userInfo["Col"] {
+        if let rowVal: AnyObject! = notification.userInfo?["Row"] {
+            if let colVal: AnyObject! = notification.userInfo?["Col"] {
                 let (row, col) = (rowVal as Int, colVal as Int)
                 f(row, col)
             }
@@ -111,9 +115,9 @@ class MineswifterScene: SKScene {
     func handleWonGame(notif: NSNotification) { winGame() }
     
     func handleSetNumberForTileAt(notification: NSNotification) {
-        if let rowVal: AnyObject! = notification.userInfo["Row"] {
-            if let colVal: AnyObject! = notification.userInfo["Col"] {
-                if let numVal: AnyObject! = notification.userInfo["Num"] {
+        if let rowVal: AnyObject! = notification.userInfo?["Row"] {
+            if let colVal: AnyObject! = notification.userInfo?["Col"] {
+                if let numVal: AnyObject! = notification.userInfo?["Num"] {
                     let (row, col, num) = (rowVal as Int, colVal as Int, numVal as Int)
                     setNumberForTileAt(row, col: col, num: num)
                 }
@@ -133,11 +137,11 @@ class MineswifterScene: SKScene {
     }
     
     func addTilesToBoard() {
-        for row in 0..numberOfRows {
-            for col in 0..numberOfCols {
+        for row in 0..<numberOfRows {
+            for col in 0..<numberOfCols {
                 var tileNode = SKSpriteNode(color: hiddenTileColor, size: CGSize(width: tileSize, height: tileSize))
                 tileNode.position = CGPoint(x: col * tileSpacing + (tileSpacing / 2), y: row * tileSpacing + (tileSpacing / 2))
-                tileNodes += tileNode
+                tileNodes.append(tileNode)
                 boardNode.addChild(tileNode)
             }
         }
@@ -207,7 +211,7 @@ class MineswifterScene: SKScene {
     
     func restartGame() {
         gameModel = MineswifterGame()
-        tileNodes = SKSpriteNode[]()
+        tileNodes = [SKSpriteNode]()
         gameModel.startGame()
     }
     
@@ -224,11 +228,11 @@ class MineswifterScene: SKScene {
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         if touches.count == 1 {
             var now = NSDate()
-            var deltaT = now.timeIntervalSinceDate(currentTouchStartTime)
+            var deltaT = now.timeIntervalSinceDate(currentTouchStartTime!)
             let touch : AnyObject! = touches.anyObject()
             let location = touch.locationInNode(self)
             let nodes = self.nodesAtPoint(location)
-            for node: SKNode! in nodes {
+            for node in nodes as [SKNode] {
                 if node == faceNode {
                     restartGame()
                 } else if node == boardNode {

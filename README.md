@@ -11,4 +11,4 @@ A Swift implementation of Minesweeper.
 
 This should run on the simulator or on any device running iOS 7.0+.
 
-To play&mdash;tap a square quickly to reveal it, or hold longer to flag it. Hit a bomb, and you die. Uncover all the bomb-less squares, and you win! Tap the face to start a new game.
+To play&mdash;tap a square quickly to reveal it, or hold longer to flag it. Hit a bomb, and you die. Uncover all the bomb-less squares and win! Tap the face to start a new game.
